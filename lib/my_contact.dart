@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 // Ensure the package is added to your pubspec.yaml file before importing it.
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
- import 'package:url_launcher/url_launcher.dart';
-
+import 'package:url_launcher/url_launcher.dart';
 
 class MyContacts extends StatelessWidget {
   const MyContacts({super.key});
@@ -68,14 +67,14 @@ class MyContacts extends StatelessWidget {
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 3),
                 itemBuilder: (context, index) {
-
                   List<CircleAvatar> aFvatars = [
                     CircleAvatar(
                       radius: 40,
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                       child: GestureDetector(
                         onTap: () {
-                          launchUrl(Uri.parse('https://www.facebook.com/ramzy.mohamed.1238'));
+                          launchUrl(Uri.parse(
+                              'https://www.facebook.com/profile.php?id=100078818844136'),mode: LaunchMode.externalApplication);
                         },
                         child: Icon(
                           FontAwesomeIcons.facebook,
@@ -87,73 +86,120 @@ class MyContacts extends StatelessWidget {
                     CircleAvatar(
                       radius: 40,
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
-                      child: Icon(
-                        FontAwesomeIcons.whatsapp,
-                        color: Colors.green,
-                        size: 50,
+                      child: GestureDetector(
+                        onTap: () {
+                          launchUrl(Uri.parse(
+                              'https://wa.me/+201015286683'),mode: LaunchMode.externalApplication);
+                        },
+                        child: Icon(
+                          FontAwesomeIcons.whatsapp,
+                          color: Colors.green,
+                          size: 50,
+                        ),
                       ),
                     ),
                     CircleAvatar(
                       radius: 40,
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
-                      child: Icon(
-                        FontAwesomeIcons.linkedin,
-                        color: Colors.blue,
-                        size: 50,
+                      child: GestureDetector(
+                        onTap: () {
+                          launchUrl(Uri.parse(
+                              'https://www.linkedin.com/in/mohammed-ramzi'),mode: LaunchMode.externalApplication);
+                        },
+                        child: Icon(
+                          FontAwesomeIcons.linkedin,
+                          color: Colors.blue,
+                          size: 50,
+                        ),
+                      ),
+                    ),
+                    CircleAvatar(
+                        radius: 40,
+                        backgroundColor: Color.fromRGBO(27, 38, 59, 1),
+                        child: GestureDetector(
+                          onTap: () {
+                            launchUrl(Uri.parse(
+                                'https://www.instagram.com/ramzy.mohamed.1238/'),mode: LaunchMode.externalApplication);
+                          },
+                          child: Icon(
+                            FontAwesomeIcons.instagram,
+                            color: Colors.pink,
+                            size: 50,
+                          ),
+                        )),
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundColor: Color.fromRGBO(27, 38, 59, 1),
+                      child: GestureDetector(
+                        onTap: () {
+                          launchUrl(Uri.parse(
+                              'https://github.com/R-ZY0'),mode: LaunchMode.externalApplication);
+                        },
+                        child: Icon(
+                          FontAwesomeIcons.github,
+                          color: Colors.black,
+                          size: 50,
+                        ),
                       ),
                     ),
                     CircleAvatar(
                       radius: 40,
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
-                      child: Icon(
-                        FontAwesomeIcons.instagram,
-                        color: Colors.pink,
-                        size: 50,
+                      child: GestureDetector(
+                        onTap: () {
+                          launchUrl(Uri.parse(
+                              'https://www.snapchat.com/add/your-snapchat-username'),mode: LaunchMode.externalApplication);
+                        },
+                        child: Icon(
+                          FontAwesomeIcons.snapchatGhost,
+                          color: Colors.yellow,
+                          size: 50,
+                        ),
                       ),
                     ),
                     CircleAvatar(
                       radius: 40,
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
-                      child: Icon(
-                        FontAwesomeIcons.github,
-                        color: Colors.black,
-                        size: 50,
+                      child: GestureDetector(
+                        onTap: () {
+                          launchUrl(Uri.parse(
+                              'https://www.tiktok.com/@your-tiktok-username'),mode: LaunchMode.externalApplication);
+                        },
+                        child: Icon(
+                          FontAwesomeIcons.tiktok,
+                          color: Colors.redAccent,
+                          size: 50,
+                        ),
                       ),
                     ),
                     CircleAvatar(
                       radius: 40,
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
-                      child: Icon(
-                        FontAwesomeIcons.snapchatGhost,
-                        color: Colors.yellow,
-                        size: 50,
+                      child: GestureDetector(
+                        onTap: () {
+                          launchUrl(Uri.parse(
+                              'https://twitter.com/your-twitter-username'),mode: LaunchMode.externalApplication);
+                        },
+                        child: Icon(
+                          FontAwesomeIcons.twitter,
+                          color: Colors.blue,
+                          size: 50,
+                        ),
                       ),
                     ),
                     CircleAvatar(
                       radius: 40,
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
-                      child: Icon(
-                        FontAwesomeIcons.tiktok,
-                        color: Colors.redAccent,
-                        size: 50,
-                      ),
-                    ),
-                    CircleAvatar(
-                      radius: 40,
-                      backgroundColor: Color.fromRGBO(27, 38, 59, 1),
-                      child: Icon(
-                        FontAwesomeIcons.twitter,
-                        color: Colors.blue,
-                        size: 50,
-                      ),
-                    ),
-                    CircleAvatar(
-                      radius: 40,
-                      backgroundColor: Color.fromRGBO(27, 38, 59, 1),
-                      child: Icon(
-                        FontAwesomeIcons.telegram,
-                        color: Colors.blue,
-                        size: 50,
+                      child: GestureDetector(
+                        onTap: () {
+                          launchUrl(Uri.parse(
+                              'https://telegram.me/your-telegram-username'),mode: LaunchMode.externalApplication);
+                        },
+                        child: Icon(
+                          FontAwesomeIcons.telegram,
+                          color: Colors.blue,
+                          size: 50,
+                        ),
                       ),
                     ),
                   ];
