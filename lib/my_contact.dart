@@ -73,8 +73,10 @@ class MyContacts extends StatelessWidget {
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                       child: GestureDetector(
                         onTap: () {
-                          launchUrl(Uri.parse(
-                              'https://www.facebook.com/profile.php?id=100078818844136'),mode: LaunchMode.externalApplication);
+                          launchUrl(
+                              Uri.parse(
+                                  'https://www.facebook.com/profile.php?id=100078818844136'),
+                              mode: LaunchMode.externalApplication);
                         },
                         child: Icon(
                           FontAwesomeIcons.facebook,
@@ -88,8 +90,8 @@ class MyContacts extends StatelessWidget {
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                       child: GestureDetector(
                         onTap: () {
-                          launchUrl(Uri.parse(
-                              'https://wa.me/+201015286683'),mode: LaunchMode.externalApplication);
+                          launchUrl(Uri.parse('https://wa.me/+201015286683'),
+                              mode: LaunchMode.externalApplication);
                         },
                         child: Icon(
                           FontAwesomeIcons.whatsapp,
@@ -103,8 +105,10 @@ class MyContacts extends StatelessWidget {
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                       child: GestureDetector(
                         onTap: () {
-                          launchUrl(Uri.parse(
-                              'https://www.linkedin.com/in/mohammed-ramzi'),mode: LaunchMode.externalApplication);
+                          launchUrl(
+                              Uri.parse(
+                                  'https://www.linkedin.com/in/mohammed-ramzi'),
+                              mode: LaunchMode.externalApplication);
                         },
                         child: Icon(
                           FontAwesomeIcons.linkedin,
@@ -118,8 +122,10 @@ class MyContacts extends StatelessWidget {
                         backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                         child: GestureDetector(
                           onTap: () {
-                            launchUrl(Uri.parse(
-                                'https://www.instagram.com/ramzy.mohamed.1238/'),mode: LaunchMode.externalApplication);
+                            launchUrl(
+                                Uri.parse(
+                                    'https://www.instagram.com/ramzy.mohamed.1238/'),
+                                mode: LaunchMode.externalApplication);
                           },
                           child: Icon(
                             FontAwesomeIcons.instagram,
@@ -132,8 +138,8 @@ class MyContacts extends StatelessWidget {
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                       child: GestureDetector(
                         onTap: () {
-                          launchUrl(Uri.parse(
-                              'https://github.com/R-ZY0'),mode: LaunchMode.externalApplication);
+                          launchUrl(Uri.parse('https://github.com/R-ZY0'),
+                              mode: LaunchMode.externalApplication);
                         },
                         child: Icon(
                           FontAwesomeIcons.github,
@@ -147,8 +153,10 @@ class MyContacts extends StatelessWidget {
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                       child: GestureDetector(
                         onTap: () {
-                          launchUrl(Uri.parse(
-                              'https://www.snapchat.com/add/your-snapchat-username'),mode: LaunchMode.externalApplication);
+                          launchUrl(
+                              Uri.parse(
+                                  'https://www.snapchat.com/add/your-snapchat-username'),
+                              mode: LaunchMode.externalApplication);
                         },
                         child: Icon(
                           FontAwesomeIcons.snapchatGhost,
@@ -162,8 +170,10 @@ class MyContacts extends StatelessWidget {
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                       child: GestureDetector(
                         onTap: () {
-                          launchUrl(Uri.parse(
-                              'https://www.tiktok.com/@your-tiktok-username'),mode: LaunchMode.externalApplication);
+                          launchUrl(
+                              Uri.parse(
+                                  'https://www.tiktok.com/@your-tiktok-username'),
+                              mode: LaunchMode.externalApplication);
                         },
                         child: Icon(
                           FontAwesomeIcons.tiktok,
@@ -177,8 +187,10 @@ class MyContacts extends StatelessWidget {
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                       child: GestureDetector(
                         onTap: () {
-                          launchUrl(Uri.parse(
-                              'https://twitter.com/your-twitter-username'),mode: LaunchMode.externalApplication);
+                          launchUrl(
+                              Uri.parse(
+                                  'https://twitter.com/your-twitter-username'),
+                              mode: LaunchMode.externalApplication);
                         },
                         child: Icon(
                           FontAwesomeIcons.twitter,
@@ -192,8 +204,10 @@ class MyContacts extends StatelessWidget {
                       backgroundColor: Color.fromRGBO(27, 38, 59, 1),
                       child: GestureDetector(
                         onTap: () {
-                          launchUrl(Uri.parse(
-                              'https://telegram.me/your-telegram-username'),mode: LaunchMode.externalApplication);
+                          launchUrl(
+                              Uri.parse(
+                                  'https://telegram.me/your-telegram-username'),
+                              mode: LaunchMode.externalApplication);
                         },
                         child: Icon(
                           FontAwesomeIcons.telegram,
